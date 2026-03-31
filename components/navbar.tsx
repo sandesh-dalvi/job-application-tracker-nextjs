@@ -1,5 +1,6 @@
 import { Briefcase } from "lucide-react";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
@@ -12,6 +13,12 @@ const Navbar = () => {
           <Briefcase /> Job Tracker
         </Link>
       </div>
+      <Link href={"/sign-in"} className="">
+        Log in
+      </Link>
+      <Link href={"/sign-up"}>
+        <Button>Start for free</Button>
+      </Link>
     </nav>
   );
 };
